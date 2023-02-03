@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Method",
+            "request": "launch",
+            "mainClass": "Method",
+            "projectName": "java_59ca7c90"
+        },
+        {
+            "type": "java",
+            "name": "Launch Practice",
+            "request": "launch",
+            "mainClass": "Practice",
+            "projectName": "java_59ca7c90"
+        },
+        {
+            "type": "java",
             "name": "Launch MyApp",
             "request": "launch",
             "mainClass": "MyApp",
