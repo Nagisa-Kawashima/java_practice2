@@ -1,16 +1,19 @@
 public class Method {
+    public static void sayHi(String name) {
+        // int x = 10;
+        System.out.println("Hi! " + name);
+      }
     
-
-    public static String sayHi(String name) {
-        // System.out.println("Hi!" + name);
-        return "Hi!" + name;
-    }
-
-    public static void main(String[] args) {
-        // sayHi("boc");
-        // sayHi("Tom");
-        // sayHi("hoge");
-        String msg = sayHi("kawashima");
-        System.out.print(msg);
-    }
+      // overload
+    
+      public static void sayHi() {
+        System.out.println("Hi! Nobody!");
+      }
+    
+      public static void main(String[] args) {
+        sayHi();
+        sayHi("Steve"); // 引数
+        // System.out.println(name);
+        // System.out.println(x);
+      }
 }

@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Practice2",
+            "request": "launch",
+            "mainClass": "Practice2",
+            "projectName": "java_59ca7c90"
+        },
+        {
+            "type": "java",
+            "name": "Launch All",
+            "request": "launch",
+            "mainClass": "java.All",
+            "projectName": "java_59ca7c90"
+        },
+        {
+            "type": "java",
+            "name": "Launch My",
+            "request": "launch",
+            "mainClass": "My",
+            "projectName": "java_59ca7c90"
+        },
+        {
+            "type": "java",
             "name": "Launch Method",
             "request": "launch",
             "mainClass": "Method",
