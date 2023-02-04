@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Launch Practice2",
             "request": "launch",
+            "mainClass": "hogehoge.Practice2",
+            "projectName": "java_59ca7c90"
+        },
+        {
+            "type": "java",
+            "name": "Launch Practice2",
+            "request": "launch",
             "mainClass": "Practice2",
             "projectName": "java_59ca7c90"
         },
