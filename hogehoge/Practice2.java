@@ -119,31 +119,121 @@
 //         tom.sayHi();
 //       }
 // }
+
+
+// abstract class User {
+//     public abstract void sayHi();
+// }
+
+// class JapaneseUser extends User {
+//     @Override
+//     public void sayHi() {
+//         System.out.println("こんにちは");
+//     }
+// }
+
+// class AmericanUser extends User {
+//     @Override
+//     public void sayHi() {
+//         System.out.println("Hi");
+//     }
+// }
+
+// public class Practice2 {
+//     public static void main(String[] args) {
+//         AmericanUser tom = new AmericanUser();
+//         JapaneseUser aki = new JapaneseUser();
+//         tom.sayHi();
+//         aki.sayHi();
+//     }
+// }
+
+// interface Printable {
+//     double VERSION = 1.2;
+//     void print();
+//     public default void getinfo() {
+//         System.out.println("I/F ver." + Printable.VERSION);
+//     }
+// }
+
+// class User implements Printable {
+//     @Override
+//     public void print() {
+//         System.out.println("Now printing user profile...");
+//     }
+// }
+
+// public class Practice2 {
+//     public static void main(String[] args) {
+//         User tom = new User();
+//         tom.print();
+//         tom.getinfo();
+//     }
+// }
+
+
+// enum Result {
+//     SUCCESS,
+//     ERROR,
+// }
+
+// public class Practice2 {
+//     public static void main(String[] args) {
+//         Result res;
+//         res = Result.ERROR;
+
+//         switch (res) {
+//             case SUCCESS:
+//             System.out.println("OK!");
+//             System.out.println(res.ordinal());
+//             break;
+
+//             case ERROR:
+//             System.out.println("NG!");
+//             System.out.println(res.ordinal());
+//             break;
+//         }
+//     }
+// }
+
+// class MyException extends Exception {
+//     public MyException(String s) {
+//         super(s);
+//     }
+// }
+
+// public class Practice2 {
+//     public static void div(int a, int b) {
+//         try {
+//             if (b < 0) {
+//                 throw new MyException("not minus!");
+//             }
+//             System.out.println(a / b);
+//         } catch (ArithmeticException e) {
+//             System.out.println(e.getMessage());
+//         } catch (MyException e) {
+//             System.out.println(e. getMessage());
+//         } finally {
+//             System.out.println("--end --");
+//         }
+//     }
+
+//     public static void main(String[] args) {
+//         div(3, 0);
+//         div(5, -2);
+//     }
+// }
+
 package hogehoge;
-
-abstract class User {
-    public abstract void sayHi();
-}
-
-class JapaneseUser extends User {
-    @Override
-    public void sayHi() {
-        System.out.println("こんにちは");
-    }
-}
-
-class AmericanUser extends User {
-    @Override
-    public void sayHi() {
-        System.out.println("Hi");
-    }
-}
 
 public class Practice2 {
     public static void main(String[] args) {
-        AmericanUser tom = new AmericanUser();
-        JapaneseUser aki = new JapaneseUser();
-        tom.sayHi();
-        aki.sayHi();
+        // Integer i = new Integer(32);
+        // int n = i.intValue();
+
+        Integer i = 32;
+        // i = null;
+        int n = i;
+        System.out.println();
     }
 }
