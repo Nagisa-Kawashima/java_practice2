@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "mainmain.Main",
+            "projectName": "java_59ca7c90"
+        },
+        {
+            "type": "java",
             "name": "Launch Print",
             "request": "launch",
             "mainClass": "hogehogehoge.Print",
