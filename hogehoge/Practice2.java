@@ -224,16 +224,131 @@
 //     }
 // }
 
-package hogehoge;
+
+// public class Practice2 {
+//     public static void main(String[] args) {
+//         // Integer i = new Integer(32);
+//         // int n = i.intValue();
+
+//         Integer i = 32;
+//         // i = null;
+//         int n = i;
+//         System.out.println();
+//     }
+// }
+
+// class MyInteger {
+//     public void getThree(int x) {
+//         System.out.println(x);
+//         System.out.println(x);
+//         System.out.println(x);
+
+//     }
+// }
+// class MyData<T> {
+//     public void getThree(T x) {
+//         System.out.println(x);
+//         System.out.println(x);
+//         System.out.println(x);
+
+//     }
+// }
+
+// public class Practice2 {
+//     public static void main(String[] args) {
+//         // MyInteger mi = new MyInteger();
+//         // mi.getThree(55); 
+//         MyData<Integer> i = new MyData<>();
+//         i.getThree(32);
+//         MyData<String> s = new MyData<>();
+//         s.getThree("hello");
+//     }
+
+   
+// }
+
+
+
+// class MyRunnable implements Runnable {
+//     @Override
+//     public void run() {
+//         for (int i = 0; i < 500; i++) {
+//             System.out.print('*');
+//         }
+//     }
+// }
+// public class Practice2 {
+//     public static void main(String[] args) {
+//         MyRunnable r = new MyRunnable();
+//         // Thread t = new Thread(r);
+//         // t.start(); 
+//         new Thread(r).start();
+
+        
+//         for (int i = 0; i < 500; i++) {
+//             System.out.print('.');
+//         }
+//     }
+// } 
+
+// public class Practice2 {
+
+//     public static void main(String[] args) {
+      
+      // ラムダ式
+      // (引数) -> {処理}
+    //   new Thread(new Runnable() {
+    //     @Override
+    //     public void run() {
+    //       for (int i = 0; i < 500; i++) {
+    //         System.out.print('*');
+    //       }
+    //     }
+    //   }).start();
+//       new Thread(() -> {
+//         for (int i = 0; i < 500; i++) {
+//           System.out.print('*');
+//         }
+//       }).start();
+  
+//       for (int i = 0; i < 500; i++) {
+//         System.out.print('.');
+//       }
+//     }
+  
+//   }
+
+// public class Practice2 {
+//     public static void main(String[] args) {
+//         String s = "abcdef";
+//         System.out.println(s.length());
+//     }
+// }
+
+package hogehoge; 
 
 public class Practice2 {
     public static void main(String[] args) {
-        // Integer i = new Integer(32);
-        // int n = i.intValue();
+        String s = "abcdef";
+        System.out.println(s.length());
+        System.out.println(s.substring(2, 5));
+        System.out.println(s.replaceAll("ab", "AB"));
 
-        Integer i = 32;
-        // i = null;
-        int n = i;
-        System.out.println();
+        String s1 = "ab";
+        String s2 = "ab";
+
+        if (s1.equals(s2)) {
+            System.out.println("same!");
+        }
+        if (s1 == s2) {
+            System.out.println("same!same!");
+        }
+
+        String ss1 = new String("ab");
+        String ss2 = new String("ab");
+
+        if (ss1 == ss2) {
+            System.out.println("same!same!same!");
+        }
     }
 }
